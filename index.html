@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>My Customers</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">Country</th>
+  </tr>
+  <tr>
+    <td>ABDUL</td>
+    <td>7470999508</td>
+  </tr>
+  <tr>
+    <td>OM WAJGE</td>
+    <td>8208188406</td>
+  </tr>
+  <tr>
+    <td>MANI</td>
+    <td>9702825997</td>
+  </tr>
+  <tr>
+    <td>OM PATIL</td>
+    <td>8600892286</td>
+  </tr>
+  <tr>
+    <td>ADYA</td>
+    <td>9370958254</td>
+  </tr>
+  <tr>
+    <td>OM MAGARGDE</td>
+    <td>7744831026</td>
+  </tr>
+  <tr>
+    <td>BUSHRA</td>
+    <td>7776874466</td>
+  </tr>
+  
+  <tr>
+    <td>ABHIJEET</td>
+    <td>8999848193</td>
+  </tr>
+  <tr>
+    <td>RITIKA</td>
+    <td>9172853818</td>
+  </tr>
+  <tr>
+    <td>AJAY SANGLE</td>
+    <td>9284758388</td>
+  </tr>
+  <tr>
+    <td>KUNAL BADAVE</td>
+    <td>8669523820</td>
+  </tr>
+  <tr>
+    <td>MUSKAN</td>
+    <td>80800430176</td>
+  </tr>
+  <tr>
+    <td>CHETAN VERMA</td>
+    <td>9798007313</td>
+  </tr>
+  <tr>
+    <td>MRUDULA</td>
+    <td>9604009866</td>
+  </tr>
+  <tr>
+    <td>ALOK PRAJAPATI</td>
+    <td>9356127344</td>
+  </tr>
+  <tr>
+    <td>ROHIT PATIL</td>
+    <td>9545829987</td>
+  </tr>
+  <tr>
+    <td>VEDANT PANDIT</td>
+    <td>9172730080</td>
+  </tr>
+  <tr>
+    <td>HARSHIT</td>
+    <td>9022461536</td>
+  </tr>
+  <tr>
+    <td>DEVYANI</td>
+    <td>9021116203</td>
+  </tr>
+  <tr>
+    <td>HARSH BHUTHRA</td>
+    <td>9574754665</td>
+  </tr>
+  <tr>
+    <td>HARSH KUMAR</td>
+    <td>8102824073</td>
+  </tr>
+  <tr>
+    <td>ATISH</td>
+    <td>7028235059</td>
+  </tr>
+  <tr>
+    <td>OMKAR JHADAV</td>
+    <td>8799965955</td>
+  </tr>
+  <tr>
+    <td>PIYUSH LAHANE</td>
+    <td>7385837903</td>
+  </tr>
+  <tr>
+    <td>KHUSHI</td>
+    <td>7387460906</td>
+  </tr>
+  <tr>
+    <td>ASHUTOSH DEO</td>
+    <td>7498401564</td>
+  </tr>
+  <tr>
+    <td>GAURANG SALVI</td>
+    <td>7666142912</td>
+  </tr>
+  <tr>
+    <td>ANUJA</td>
+    <td>7057478891</td>
+  </tr>
+  <tr>
+    <td>PRATEEK</td>
+    <td>8949142153</td>
+  </tr>
+  <tr>
+    <td>NEERAJKUMAR</td>
+    <td>8839798756</td>
+  </tr>
+  <tr>
+    <td>VEDANT SORTE</td>
+    <td>8767945242</td>
+  </tr>
+  <tr>
+    <td>NIKHIK CHAVAN</td>
+    <td>8767621819</td>
+  </tr>
+  <tr>
+    <td>KARTAVYA</td>
+    <td>9021405459</td>
+  </tr>
+  <tr>
+    <td>UMESH PATIL</td>
+    <td>8766940412</td>
+  </tr>
+  <tr>
+    <td>PREM NANKANI</td>
+    <td>9011113870</td>
+  </tr>
+  <tr>
+    <td>OM KUMAR SINGH</td>
+    <td>6205559386</td>
+  </tr>
+  <tr>
+    <td>GAURAV AHIRE</td>
+    <td>8530368566</td>
+  </tr>
+  <tr>
+    <td>JAY RAHUL RATHI</td>
+    <td>9423712369</td>
+  </tr
+  <tr>
+    <td>JAYESH</td>
+    <td>8446481408</td>
+  </tr>
+  <tr>
+    <td>ROHAN HIWALE</td>
+    <td>7757887658</td>
+  </tr>
+  <tr>
+    <td>SAJJID</td>
+    <td>7798241749</td>
+  </tr>
+  <tr>
+    <td>ZAID</td>
+    <td>7408915584</td>
+  </tr>
+  <tr>
+    <td>ABHISHEK PATNI</td>
+    <td>7755914691</td>
+  </tr>
+  <tr>
+    <td>ANIKET</td>
+    <td>7764905169</td>
+  </tr>
+  <tr>
+    <td>TEJAS MAHAJAN</td>
+    <td>8329724165</td>
+  </tr>
+  <tr>
+    <td>TANMAY</td>
+    <td>8408882079</td>
+  </tr>
+  <tr>
+    <td>GUNJAN</td>
+    <td>8421791410</td>
+  </tr>
+  <tr>
+    <td>HARSHAL</td>
+    <td>8669456979</td>
+  </tr>
+  <tr>
+    <td>AJAY CHAVAN</td>
+    <td>9764568115</td>
+  </tr>
+  <tr>
+    <td>SAKSHI KALASKAR</td>
+    <td>8767887099</td>
+  </tr>
+  <tr>
+    <td>RITESH</td>
+    <td>8340233594</td>
+  </tr>
+  <tr>
+    <td>ANMOL RATHOD</td>
+    <td>8799878105</td>
+  </tr>
+  <tr>
+    <td>KUNAL SHINDE</td>
+    <td>9112739319</td>
+  </tr>
+  <tr>
+    <td>AYUSH DEWANGAN</td>
+    <td>6269832501</td>
+  </tr>
+  <tr>
+    <td>SOHIL TADAVI</td>
+    <td>9970244891</td>
+  </tr>
+  <tr>
+    <td>SAKSHI SUNIL DIGGAKER</td>
+    <td>8788593897</td>
+  </tr>
+  <tr>
+    <td>ABHISHEK SHARMA</td>
+    <td>6206419968</td>
+  </tr>
+  <tr>
+    <td>PIYUSH ZHOPE</td>
+    <td>7666438748</td>
+  </tr>
+  <tr>
+    <td>RISHAB</td>
+    <td>7038653262</td>
+  </tr>
+  <tr>
+    <td>CHAITANYA</td>
+    <td>7038936316</td>
+  </tr>
+  <tr>
+    <td>ANKITA BHASAD</td>
+    <td>7028235059</td>
+  </tr>
+  <tr>
+    <td>KUMKUM</td>
+    <td>7030327966</td>
+  </tr>
+  <tr>
+    <td>TANVI </td>
+    <td>7020310876</td>
+  </tr>
+  <tr>
+    <td>KAUSTUK</td>
+    <td>6355207808</td>
+  </tr>
+  
+  <tr>
+    <td>DIVYA</td>
+    <td>7709026780</td>
+  </tr>
+  <tr>
+    <td>MITESH</td>
+    <td>7030582574</td>
+  </tr>
+  <tr>
+    <td>AZIM</td>
+    <td>7028489849</td>
+  </tr>
+  <tr>
+    <td>KANISHKA KOLI</td>
+    <td>8097331314</td>
+  </tr>
+  <tr>
+    <td>HUSSAIN LOKHANDWALA</td>
+    <td>6265522765</td>
+  </tr>
+  <tr>
+    <td>SAKET ARYA</td>
+    <td>9798936749</td>
+  </tr>
+  <tr>
+    <td>SHRI DARANDALE</td>
+    <td>7385144512</td>
+  </tr>
+  <tr>
+    <td>AYUSH PATIL</td>
+    <td>7058266550</td>
+  </tr>
+  <tr>
+    <td>VAISHNAVI PATIL</td>
+    <td>7066178380</td>
+  </tr>
+  <tr>
+    <td>UTSAV</td>
+    <td>7069608106</td>
+  </tr>
+  <tr>
+    <td>OM GAUTAM</td>
+    <td>7218541433</td>
+  </tr>
+  <tr>
+    <td>SHRUSHTHI</td>
+    <td>7263831735</td>
+  </tr>
+  <tr>
+    <td>ASHU LAHANE</td>
+    <td>7385837903</td>
+  </tr>
+  <tr>
+    <td>SAHIL BHAMARE</td>
+    <td>7507076673</td>
+  </tr>
+  <tr>
+    <td>NEEL</td>
+    <td>7564086741</td>
+  </tr>
+  <tr>
+    <td>SHREYAS MAURYA</td>
+    <td>7666336947</td>
+  </tr>
+  <tr>
+    <td>YASH WAZAT</td>
+    <td>9028993232</td>
+  </tr>
+  <tr>
+    <td>ANKIT PATIL</td>
+    <td>9172233857</td>
+  </tr>
+  <tr>
+    <td>ADITYA GOANKAR</td>
+    <td>9307063106</td>
+  </tr>
+  <tr>
+    <td>TASHU</td>
+    <td>9893014520</td>
+  </tr>
+  <tr>
+    <td>LISHA</td>
+    <td>8080278051</td>
+  </tr>
+  <tr>
+    <td>BHAVESH</td>
+    <td>8329724165</td>
+  </tr>
+  <tr>
+    <td>ZOHAIB</td>
+    <td>9702408818</td>
+  </tr>
+  <tr>
+    <td>TANISHA</td>
+    <td>8554090172</td>
+  </tr>
+  <tr>
+    <td>DISHA</td>
+    <td>8422997340</td>
+  </tr>
+  <tr>
+    <td>RIDA</td>
+    <td>9834751801</td>
+  </tr>
+  <tr>
+    <td>PRIYANKA YADAV</td>
+    <td>9834271236</td>
+  </tr>
+  <tr>
+    <td>MANVI</td>
+    <td>9689775215</td>
+  </tr>
+  <tr>
+    <td>MANYA SHETTY</td>
+    <td>9766897265</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
